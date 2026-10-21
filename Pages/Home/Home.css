@@ -1,0 +1,129 @@
+:root {
+    --bg: rgb(57, 57, 57); 
+    --bg-hovered: rgb(90, 90, 90);
+    --surface:rgb(40, 40, 40); 
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+
+/* Header styles  ////////////////*/
+
+.header-div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 20px;
+}
+
+.navigation-div {
+    display: flex;
+    font-size: 32px;
+    font-weight: 900;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.searchbar-div {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.home-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--bg);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.home-icon-container:hover{
+    scale: 1.1;
+    background-color: var(--bg-hovered)
+}
+
+.searchbar-div img {
+    width: 30px;
+    height: 30px;
+}
+
+.searchbar-div input[type="text"] {
+    padding: 15px;
+    width: 100%;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    border: none;
+    background-color: var(--bg);
+    transition: .2s;
+}
+
+.searchbar-div input[type="text"]::placeholder{
+    color: #ffffffbe;
+}
+
+.searchbar-div input[type="text"]:focus{
+    outline: none;
+    border: 1px solid #ffffff;
+}
+
+.searchbar-div input[type="text"]:hover {
+    background-color: var(--bg-hovered);
+}
+
+
+.account-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.account-div p {
+    border-radius: 15px;
+    padding: 5px 10px;
+    background-color: white;
+    color: #000000;
+    font-weight: 600;
+}
+
+.account-div img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.account-div img:first-of-type{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+
+/* main styles  ////////////////*/
