@@ -133,7 +133,7 @@ main {
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 
@@ -358,17 +358,17 @@ main {
     transition: .2s;
 }
 
-.recent-item:hover{
+.recent-item:hover {
     background-color: var(--bg-hovered);
 }
 
-.recent-item img{
+.recent-item img {
     width: 50px;
     height: 50px;
     border-radius: 5px 0 0 5px;
 }
 
-.main-section{
+.main-section {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -376,7 +376,7 @@ main {
     align-items: center;
 }
 
-.section-title{
+.section-title {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -390,7 +390,7 @@ main {
     font-weight: 900;
 }
 
-.section-content{
+.section-content {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -398,7 +398,7 @@ main {
     align-items: start;
 }
 
-.section-item{
+.section-item {
     width: 25%;
     display: flex;
     flex-direction: column;
@@ -410,11 +410,11 @@ main {
     transition: .2s;
 }
 
-.section-item:hover{
+.section-item:hover {
     background-color: var(--bg);
 }
 
-.section-content img{
+.section-content img {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 5px;
@@ -426,4 +426,166 @@ main {
 
 .music-play {
     width: 20%;
+    height: 75vh;
+    background-color: var(--surface);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.play-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.music-play>img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.song-details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+
+.song-details h5 {
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: var(--bg);
+    transition: .3s;
+    cursor: pointer;
+}
+
+.song-details h5:hover {
+    background-color: var(--bg-hovered);
+}
+
+.song-details p {
+    margin-top: -10px;
+    color: rgba(255, 255, 255, 0.434);
+}
+
+.about-artist {
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    background-color: var(--bg);
+    position: relative;
+}
+
+.about-artist * {
+    padding: 5px 15px;
+}
+
+.about-artist img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    padding: 0;
+    z-index: 2;
+    height: 150px;
+    object-fit: cover;
+}
+
+.about-artist::before {
+    content: "About the artist";
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    font-weight: 900;
+    z-index: 10;
+}
+
+.follow-listeners{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.follow-listeners h5{
+    padding: 0;
+    width: 50%;
+    font-size: 12px;
+}
+
+.about-artist > p{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.484);
+}
+
+.follow-button{
+    padding: 5px 15px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.484);
+    transition: .2s;
+    cursor: pointer;
+}
+
+.follow-button:hover{
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    scale:1.05
+}
+
+
+.credits{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--bg);
+    border-radius: 15px;
+}
+
+/* .credits h5{
+    padding: 0;
+} */
+
+.credits-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.credits-title p{
+    font-weight: 900;
+}
+
+.credits-item{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.credit-artist{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
 }
